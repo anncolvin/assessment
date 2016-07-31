@@ -1,0 +1,19 @@
+<div class="title-bar"><h2><center><b>Send Your Text Here and Now!</b></center><h2></center></div>
+
+  <%= form_for @text do |t| %>
+
+    <div class="required_field">
+      <%= t.label "Enter a phone number" %>
+      <%= t.text_field :number %>
+    </div>
+
+    <div class="required_field">
+      <%= t.label "Enter a text message" %>
+      <%= t.text_field :message %>
+    </div>
+
+    <div>
+      <%= t.submit "Submit Text" %>
+    </div>
+
+  <% end %>
